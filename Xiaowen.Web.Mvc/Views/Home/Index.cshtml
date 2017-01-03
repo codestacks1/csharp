@@ -1,0 +1,83 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+}
+
+<br />
+<div class="row row-offcanvas row-offcanvas-right">
+    <div class="col-xs-12 col-sm-9">
+        <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+        </p>
+        <div class="jumbotron">
+            <h1>Hello, friend!</h1>
+            <p>This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some responsive-range viewport sizes to see it in action.</p>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-lg-4">
+                <table>
+                    <tr>
+                        <td style="height:80%;">
+                            <h2>Office</h2>
+                            Office 编程
+                            <br />
+                            Excel 导入导出
+                            <br />
+                            Word 导入导出
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @Html.ActionLink("View demo »", "Index", "Office", new { id = "" }, new { @class = "btn btn-default", @role = "button" })
+                        </td>
+                    </tr>
+                </table>
+
+
+            </div><!--/.col-xs-6.col-lg-4-->
+            <div class="col-xs-6 col-lg-4">
+                <h2>Memory</h2>
+                缓存技术：包含.NETFramework自己的缓存库.
+                <br />
+                另外还会包含一些第三方开源缓存组件，如：Radi
+                <br />
+                <br />
+                @Html.ActionLink("View demo »", "Index", "Cache", new { id = "" }, new { @class = "btn btn-default", @role = "button" })
+            </div><!--/.col-xs-6.col-lg-4-->
+            <div class="col-xs-6 col-lg-4">
+                <h2>Network</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p>@Html.ActionLink("View demo »", "Index", "Network", new { id = "" }, new { @class = "btn btn-default", @role = "button" })</p>
+            </div><!--/.col-xs-6.col-lg-4-->
+            <div class="col-xs-6 col-lg-4">
+                <h2>Dbo</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p>@Html.ActionLink("View demo »", "Index", "Dbo", new { id = "" }, new { @class = "btn btn-default", @role = "button" })</p>
+            </div><!--/.col-xs-6.col-lg-4-->
+            <div class="col-xs-6 col-lg-4">
+                <h2>Concurrency</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p>@Html.ActionLink("View demo »", "Index", "Concurrency", new { id = "" }, new { @class = "btn btn-default", @role = "button" })</p>
+            </div><!--/.col-xs-6.col-lg-4-->
+            <div class="col-xs-6 col-lg-4">
+                <h2>Heading</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p>@Html.ActionLink("View demo »", "Index", "", new { id = "" }, new { @class = "btn btn-default", @role = "button" })</p>
+            </div><!--/.col-xs-6.col-lg-4-->
+        </div><!--/row-->
+    </div><!--/.col-xs-12.col-sm-9-->
+    <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+        <div class="list-group">
+            <a href="#" class="list-group-item active">Office</a>
+            <a href="#" class="list-group-item">Memory</a>
+            <a href="#" class="list-group-item">Network</a>
+            <a href="#" class="list-group-item">Dbo</a>
+            <a href="#" class="list-group-item">Concurrency</a>
+            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+        </div>
+    </div><!--/.sidebar-offcanvas-->
+</div>

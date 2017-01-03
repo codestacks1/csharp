@@ -33,6 +33,8 @@ bld/
 #xiaowen ignore test proj
 *.testsettings
 *Test*/
+*console*/
+*Console*/
 
 # NUNIT
 *.VisualState.xml

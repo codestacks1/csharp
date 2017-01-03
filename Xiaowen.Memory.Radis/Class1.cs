@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Xiaowen.Office.Word
+namespace Xiaowen.Memory.Radis
 {
     public class Class1
     {
