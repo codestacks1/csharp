@@ -1,0 +1,131 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "xiaowen.concurrency", "xiaowen.concurrency", "{14CDBC3A-2CF7-4169-8866-CFECC503ABBE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "xiaowen.windows", "xiaowen.windows", "{998900BE-6F95-4A31-B008-86D7E279100D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "wpf", "wpf", "{409B5C38-26A8-4053-8C39-20EB1D93BE49}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "winform", "winform", "{F87ECD4A-9A16-4C24-84DC-B042AD1E4B72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Concurrency.Demo", "Concurrency.Demo\Concurrency.Demo.csproj", "{6DE53818-E505-4F38-871E-EE92C4C217C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "xiaowen.office", "xiaowen.office", "{0F7C5728-2182-436A-8DD8-882EB353B920}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xiaowen.Office.Excel", "Xiaowen.Office.Excel\Xiaowen.Office.Excel.csproj", "{FB5D64FF-5A90-4C01-BD42-E54210EBD821}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xiaowen.Office.Word", "Xiaowen.Office.Word\Xiaowen.Office.Word.csproj", "{C9486D4A-F823-49D6-9A39-5150FECFCD08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xiaowen.Office.Pdf", "Xiaowen.Office.Pdf\Xiaowen.Office.Pdf.csproj", "{DC75C5AC-242F-439E-B153-09A3BAE639BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "xiaowen.test", "xiaowen.test", "{8D80DAD9-08E4-4BDF-B0F6-85B7287690CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "xiaowen.dbo", "xiaowen.dbo", "{0F89AC8F-01A7-4590-A6E7-87796B09EBA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xiaowen.Dbo.NHibernate", "Xiaowen.Dbo.NHibernate\Xiaowen.Dbo.NHibernate.csproj", "{AAA4C248-3E35-45FA-A90B-DC879B804A95}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "xiaowen.memory", "xiaowen.memory", "{53F659EB-A28C-42D5-AA34-94AE0FD8C566}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xiaowen.Memory.Caching", "Xiaowen.Memory.Caching\Xiaowen.Memory.Caching.csproj", "{16E46361-368C-4E69-A202-E36169B46082}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "xiaowen.network", "xiaowen.network", "{EAF6CC39-0B61-4C43-A707-DC306AC067CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xiaowen.Net.Download", "Xiaowen.Net.Download\Xiaowen.Net.Download.csproj", "{BB2C72F5-0C4D-4074-A3FB-A83C86A3D5D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xiaowen.Net.Socket", "Xiaowen.Net.Socket\Xiaowen.Net.Socket.csproj", "{C9D1058B-5346-4553-ACBB-58F79D42B37B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xiaowen.Net.Upload", "Xiaowen.Net.Upload\Xiaowen.Net.Upload.csproj", "{C116A280-5D7C-4C5B-A6DF-9CA002999155}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "xiaowen.web", "xiaowen.web", "{30E8825C-64D4-4CC5-91A2-85E122726F3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xiaowen.Web.Mvc", "Xiaowen.Web.Mvc\Xiaowen.Web.Mvc.csproj", "{944C0DB6-58C5-4B00-8E8A-51A2AE960ED3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "xiaowen.resource", "xiaowen.resource", "{B46203E9-AF10-4F74-A8B3-A389C9937887}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Xiaowen.Resource.Script", "Xiaowen.Resource.Script\Xiaowen.Resource.Script.shproj", "{059B202D-0C7E-411A-95B6-D5EAC3C211E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAndLoadTestProject1", "WebAndLoadTestProject1\WebAndLoadTestProject1.csproj", "{9E54E233-7EBC-47C1-9B9A-76EF80E5A412}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CC3FB500-B638-4507-8E94-447E560C3B56}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Xiaowen.Resource.Script\Xiaowen.Resource.Script.projitems*{059b202d-0c7e-411a-95b6-d5eac3c211e5}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6DE53818-E505-4F38-871E-EE92C4C217C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DE53818-E505-4F38-871E-EE92C4C217C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DE53818-E505-4F38-871E-EE92C4C217C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DE53818-E505-4F38-871E-EE92C4C217C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB5D64FF-5A90-4C01-BD42-E54210EBD821}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB5D64FF-5A90-4C01-BD42-E54210EBD821}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB5D64FF-5A90-4C01-BD42-E54210EBD821}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB5D64FF-5A90-4C01-BD42-E54210EBD821}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9486D4A-F823-49D6-9A39-5150FECFCD08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9486D4A-F823-49D6-9A39-5150FECFCD08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9486D4A-F823-49D6-9A39-5150FECFCD08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9486D4A-F823-49D6-9A39-5150FECFCD08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC75C5AC-242F-439E-B153-09A3BAE639BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC75C5AC-242F-439E-B153-09A3BAE639BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC75C5AC-242F-439E-B153-09A3BAE639BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC75C5AC-242F-439E-B153-09A3BAE639BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAA4C248-3E35-45FA-A90B-DC879B804A95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAA4C248-3E35-45FA-A90B-DC879B804A95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAA4C248-3E35-45FA-A90B-DC879B804A95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAA4C248-3E35-45FA-A90B-DC879B804A95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16E46361-368C-4E69-A202-E36169B46082}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16E46361-368C-4E69-A202-E36169B46082}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16E46361-368C-4E69-A202-E36169B46082}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16E46361-368C-4E69-A202-E36169B46082}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB2C72F5-0C4D-4074-A3FB-A83C86A3D5D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB2C72F5-0C4D-4074-A3FB-A83C86A3D5D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB2C72F5-0C4D-4074-A3FB-A83C86A3D5D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB2C72F5-0C4D-4074-A3FB-A83C86A3D5D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9D1058B-5346-4553-ACBB-58F79D42B37B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9D1058B-5346-4553-ACBB-58F79D42B37B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9D1058B-5346-4553-ACBB-58F79D42B37B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9D1058B-5346-4553-ACBB-58F79D42B37B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C116A280-5D7C-4C5B-A6DF-9CA002999155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C116A280-5D7C-4C5B-A6DF-9CA002999155}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C116A280-5D7C-4C5B-A6DF-9CA002999155}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C116A280-5D7C-4C5B-A6DF-9CA002999155}.Release|Any CPU.Build.0 = Release|Any CPU
+		{944C0DB6-58C5-4B00-8E8A-51A2AE960ED3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{944C0DB6-58C5-4B00-8E8A-51A2AE960ED3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{944C0DB6-58C5-4B00-8E8A-51A2AE960ED3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{944C0DB6-58C5-4B00-8E8A-51A2AE960ED3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E54E233-7EBC-47C1-9B9A-76EF80E5A412}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E54E233-7EBC-47C1-9B9A-76EF80E5A412}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E54E233-7EBC-47C1-9B9A-76EF80E5A412}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E54E233-7EBC-47C1-9B9A-76EF80E5A412}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{409B5C38-26A8-4053-8C39-20EB1D93BE49} = {998900BE-6F95-4A31-B008-86D7E279100D}
+		{F87ECD4A-9A16-4C24-84DC-B042AD1E4B72} = {998900BE-6F95-4A31-B008-86D7E279100D}
+		{6DE53818-E505-4F38-871E-EE92C4C217C7} = {14CDBC3A-2CF7-4169-8866-CFECC503ABBE}
+		{FB5D64FF-5A90-4C01-BD42-E54210EBD821} = {0F7C5728-2182-436A-8DD8-882EB353B920}
+		{C9486D4A-F823-49D6-9A39-5150FECFCD08} = {0F7C5728-2182-436A-8DD8-882EB353B920}
+		{DC75C5AC-242F-439E-B153-09A3BAE639BE} = {0F7C5728-2182-436A-8DD8-882EB353B920}
+		{AAA4C248-3E35-45FA-A90B-DC879B804A95} = {0F89AC8F-01A7-4590-A6E7-87796B09EBA1}
+		{16E46361-368C-4E69-A202-E36169B46082} = {53F659EB-A28C-42D5-AA34-94AE0FD8C566}
+		{BB2C72F5-0C4D-4074-A3FB-A83C86A3D5D7} = {EAF6CC39-0B61-4C43-A707-DC306AC067CB}
+		{C9D1058B-5346-4553-ACBB-58F79D42B37B} = {EAF6CC39-0B61-4C43-A707-DC306AC067CB}
+		{C116A280-5D7C-4C5B-A6DF-9CA002999155} = {EAF6CC39-0B61-4C43-A707-DC306AC067CB}
+		{944C0DB6-58C5-4B00-8E8A-51A2AE960ED3} = {30E8825C-64D4-4CC5-91A2-85E122726F3A}
+		{059B202D-0C7E-411A-95B6-D5EAC3C211E5} = {B46203E9-AF10-4F74-A8B3-A389C9937887}
+		{9E54E233-7EBC-47C1-9B9A-76EF80E5A412} = {8D80DAD9-08E4-4BDF-B0F6-85B7287690CC}
+		{CC3FB500-B638-4507-8E94-447E560C3B56} = {8D80DAD9-08E4-4BDF-B0F6-85B7287690CC}
+	EndGlobalSection
+EndGlobal

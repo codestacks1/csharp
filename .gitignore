@@ -30,6 +30,9 @@ bld/
 # MSTest test Results
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
+#xiaowen ignore test proj
+*.testsettings
+*Test*/
 
 # NUNIT
 *.VisualState.xml

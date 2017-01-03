@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[DOTNETCACHE] (
+    [ID]             BIGINT        IDENTITY (1, 1) NOT NULL,
+    [CACHECOMPONENT] VARCHAR (50)  NULL,
+    [CACHETHEORY]    VARCHAR (500) NULL,
+    [ISPLUGIN]       INT           DEFAULT ((0)) NULL,
+    [SOURCE]         VARCHAR (100) NULL,
+    PRIMARY KEY CLUSTERED ([ID] ASC)
+);
+
