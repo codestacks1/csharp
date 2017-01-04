@@ -76,6 +76,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xiaowen.Dbo.Oracle", "Xiaow
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xiaowen.Dbo.Utilities", "Xiaowen.Dbo.Utilities\Xiaowen.Dbo.Utilities.csproj", "{93042A52-8DFC-4DFC-A689-B20FE2248D03}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xiaowen.Dbo.EF", "Xiaowen.Dbo.EF\Xiaowen.Dbo.EF.csproj", "{CF3AFB9D-F870-4649-8114-ECC57E280A87}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "xiaowen.personal", "xiaowen.personal", "{F4A76307-B4C3-4D54-8FB1-93535B960F5B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "xiaowen.sqldetach", "xiaowen.sqldetach", "{8223E0FD-8DAA-4D6A-89FD-FA287D065595}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xiaowen.Personal.SqlDetach", "Xiaowen.Personal.SqlDetach\Xiaowen.Personal.SqlDetach.csproj", "{C928CE56-96B3-48EA-9090-2E13D9210A6D}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Xiaowen.Resource.Script\Xiaowen.Resource.Script.projitems*{059b202d-0c7e-411a-95b6-d5eac3c211e5}*SharedItemsImports = 13
@@ -165,6 +173,14 @@ Global
 		{93042A52-8DFC-4DFC-A689-B20FE2248D03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93042A52-8DFC-4DFC-A689-B20FE2248D03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93042A52-8DFC-4DFC-A689-B20FE2248D03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF3AFB9D-F870-4649-8114-ECC57E280A87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF3AFB9D-F870-4649-8114-ECC57E280A87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF3AFB9D-F870-4649-8114-ECC57E280A87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF3AFB9D-F870-4649-8114-ECC57E280A87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C928CE56-96B3-48EA-9090-2E13D9210A6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C928CE56-96B3-48EA-9090-2E13D9210A6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C928CE56-96B3-48EA-9090-2E13D9210A6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C928CE56-96B3-48EA-9090-2E13D9210A6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -194,5 +210,8 @@ Global
 		{CB1D3CAD-8D7F-40FE-9BB3-D75D87D90B0C} = {0F89AC8F-01A7-4590-A6E7-87796B09EBA1}
 		{B17A9415-E894-4CAC-86EE-F89D42565672} = {0F89AC8F-01A7-4590-A6E7-87796B09EBA1}
 		{93042A52-8DFC-4DFC-A689-B20FE2248D03} = {0F89AC8F-01A7-4590-A6E7-87796B09EBA1}
+		{CF3AFB9D-F870-4649-8114-ECC57E280A87} = {0F89AC8F-01A7-4590-A6E7-87796B09EBA1}
+		{8223E0FD-8DAA-4D6A-89FD-FA287D065595} = {F4A76307-B4C3-4D54-8FB1-93535B960F5B}
+		{C928CE56-96B3-48EA-9090-2E13D9210A6D} = {8223E0FD-8DAA-4D6A-89FD-FA287D065595}
 	EndGlobalSection
 EndGlobal
