@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Xiaowen.Vedio.Lib
+namespace Xiaowen.Video.Lib
 {
     public class Class1
     {

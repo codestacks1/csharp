@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Xiaowen.Vedio.Lib")]
+[assembly: AssemblyTitle("Xiaowen.Video.Lib")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Xiaowen.Vedio.Lib")]
+[assembly: AssemblyProduct("Xiaowen.Video.Lib")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("73e9a1f6-4287-4a24-8cbf-0e5bbce1caf2")]
+[assembly: Guid("a1c40a57-3f95-4311-ba57-9a56007883e6")]
 
 // Version information for an assembly consists of the following four values:
 //

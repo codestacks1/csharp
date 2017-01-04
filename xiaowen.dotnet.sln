@@ -60,6 +60,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "xiaowen.console", "xiaowen.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xiaowen.console.office", "xiaowen.console.office\xiaowen.console.office.csproj", "{4CB90EE3-CEB2-4914-97A5-0DC66E3FC3C5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoAnalysis", "VideoAnalysis\VideoAnalysis.csproj", "{DC758B87-9183-4FB9-B31D-006664703746}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "xiaowen.windows.lib", "xiaowen.windows.lib", "{CF5C4B50-5B3E-40BB-87C9-EAC7ECDD03D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xiaowen.Video.Lib", "Xiaowen.Video.Lib\Xiaowen.Video.Lib.csproj", "{A1C40A57-3F95-4311-BA57-9A56007883E6}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Xiaowen.Resource.Script\Xiaowen.Resource.Script.projitems*{059b202d-0c7e-411a-95b6-d5eac3c211e5}*SharedItemsImports = 13
@@ -121,6 +127,14 @@ Global
 		{4CB90EE3-CEB2-4914-97A5-0DC66E3FC3C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CB90EE3-CEB2-4914-97A5-0DC66E3FC3C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CB90EE3-CEB2-4914-97A5-0DC66E3FC3C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC758B87-9183-4FB9-B31D-006664703746}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC758B87-9183-4FB9-B31D-006664703746}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC758B87-9183-4FB9-B31D-006664703746}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC758B87-9183-4FB9-B31D-006664703746}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1C40A57-3F95-4311-BA57-9A56007883E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1C40A57-3F95-4311-BA57-9A56007883E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1C40A57-3F95-4311-BA57-9A56007883E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1C40A57-3F95-4311-BA57-9A56007883E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -143,5 +157,7 @@ Global
 		{CC3FB500-B638-4507-8E94-447E560C3B56} = {8D80DAD9-08E4-4BDF-B0F6-85B7287690CC}
 		{1A2F8762-5647-4BA8-AF1E-F127D51FBA3F} = {53F659EB-A28C-42D5-AA34-94AE0FD8C566}
 		{4CB90EE3-CEB2-4914-97A5-0DC66E3FC3C5} = {3801EC97-AF64-4B47-9583-D6A84C508F9C}
+		{DC758B87-9183-4FB9-B31D-006664703746} = {409B5C38-26A8-4053-8C39-20EB1D93BE49}
+		{A1C40A57-3F95-4311-BA57-9A56007883E6} = {CF5C4B50-5B3E-40BB-87C9-EAC7ECDD03D4}
 	EndGlobalSection
 EndGlobal

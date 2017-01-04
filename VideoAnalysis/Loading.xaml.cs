@@ -16,27 +16,15 @@ using System.Windows.Shapes;
 namespace VideoAnalysis
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Loading.xaml
+    /// 程序启动加载
+    /// 
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Loading : UserControl
     {
-        public MainWindow()
+        public Loading()
         {
             InitializeComponent();
-        }
-
-        private void Loading_Loaded(object sender, RoutedEventArgs e)
-        {
-            Task task = AnimationLoaded();
-        }
-
-        async Task AnimationLoaded()
-        {
-            await Task.Delay(TimeSpan.FromSeconds(3));
-            //MessageBox.Show("Loaded final");
-            HomeWindow home = new HomeWindow();
-            this.Close();
-            home.Show();
         }
     }
 }

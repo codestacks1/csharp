@@ -321,7 +321,7 @@ namespace Xiaowen.Concurrency.Demo
                 }
                 catch (AggregateException ex)
                 {
-                    throw;
+                    Console.WriteLine(ex.Message);
                 }
             }
         }
