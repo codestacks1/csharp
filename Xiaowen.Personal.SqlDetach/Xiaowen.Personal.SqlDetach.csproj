@@ -69,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlDetachBase.cs" />
     <Compile Include="WhereClauseSchema.cs" />
     <Compile Include="XwEventArgs.cs" />
     <Compile Include="XwSqlComplexSchema.cs" />
