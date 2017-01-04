@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Xiaowen.Personal.SqlDetach
 {
-    public class Class1
+    /// <summary>
+    /// author: xiaowen
+    /// </summary>
+    public class XwSqlSimpleSchema
     {
     }
 }
