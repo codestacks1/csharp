@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using excel = Microsoft.Office.Interop.Excel;
+using MSExcel = Microsoft.Office.Interop.Excel;
 using Xiaowen.Office.Excel.Models;
 using System.IO;
 
@@ -11,22 +11,29 @@ namespace Xiaowen.Office.Excel
 {
     public class ExcelExport
     {
-        public void Export(string path)
+        public string Export(string path)
         {
-            DisplayInExcel(AddAccount());
+            return DisplayInExcel(AddAccount());
         }
 
-        private void DisplayInExcel(IEnumerable<Account> accounts)
+        private string DisplayInExcel(IEnumerable<Account> accounts)
         {
+            string err = string.Empty;
             try
             {
-                var excelApp = new excel.Application();
+                string path = AppDomain.CurrentDomain.BaseDirectory;
+                path += "templates\\account";
+                
+                var excelApp = new MSExcel.Application();
                 //excelApp.Visible = true;
 
-                string path = Environment.CurrentDirectory;
-                
-                excelApp.Workbooks.Open("");
-                excel._Worksheet workSheet = (excel.Worksheet)excelApp.ActiveSheet;
+                //Environment 程序运行环境 \bin\Debug\
+                //string path = Environment.CurrentDirectory;
+
+                //excelApp.Workbooks.CheckOut(path);
+
+                excelApp.Workbooks.Open(path);
+                MSExcel._Worksheet workSheet = (MSExcel.Worksheet)excelApp.ActiveSheet;
 
                 workSheet.Cells[1, "A"] = "ID Number";
                 workSheet.Cells[1, "B"] = "Current Balance";
@@ -42,12 +49,13 @@ namespace Xiaowen.Office.Excel
                 workSheet.Columns[1].AutoFit();
                 workSheet.Columns[2].AutoFit();
                 //((excel.Range)workSheet.Columns[1]).AutoFit(); 显示强制转换
+                
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
-                Console.Read();
+               return err = ex.Message;
             }
+            return err;
         }
 
         private IEnumerable<Account> AddAccount()

@@ -60,8 +60,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "xiaowen.console", "xiaowen.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xiaowen.console.office", "xiaowen.console.office\xiaowen.console.office.csproj", "{4CB90EE3-CEB2-4914-97A5-0DC66E3FC3C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{D5CB8AE9-801B-47E7-B377-76A89006F360}"
-EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Xiaowen.Resource.Script\Xiaowen.Resource.Script.projitems*{059b202d-0c7e-411a-95b6-d5eac3c211e5}*SharedItemsImports = 13
@@ -123,10 +121,6 @@ Global
 		{4CB90EE3-CEB2-4914-97A5-0DC66E3FC3C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CB90EE3-CEB2-4914-97A5-0DC66E3FC3C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CB90EE3-CEB2-4914-97A5-0DC66E3FC3C5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D5CB8AE9-801B-47E7-B377-76A89006F360}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D5CB8AE9-801B-47E7-B377-76A89006F360}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D5CB8AE9-801B-47E7-B377-76A89006F360}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D5CB8AE9-801B-47E7-B377-76A89006F360}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -149,6 +143,5 @@ Global
 		{CC3FB500-B638-4507-8E94-447E560C3B56} = {8D80DAD9-08E4-4BDF-B0F6-85B7287690CC}
 		{1A2F8762-5647-4BA8-AF1E-F127D51FBA3F} = {53F659EB-A28C-42D5-AA34-94AE0FD8C566}
 		{4CB90EE3-CEB2-4914-97A5-0DC66E3FC3C5} = {3801EC97-AF64-4B47-9583-D6A84C508F9C}
-		{D5CB8AE9-801B-47E7-B377-76A89006F360} = {30E8825C-64D4-4CC5-91A2-85E122726F3A}
 	EndGlobalSection
 EndGlobal
