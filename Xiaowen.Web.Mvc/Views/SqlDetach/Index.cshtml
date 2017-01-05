@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "SqlDetach";
+}
+
+<h2>Index</h2>
+
+<div>
+    @foreach (var item in Model != null ? Model : new List<int>())
+    {
+        <em>@item</em>
+    }
+</div>

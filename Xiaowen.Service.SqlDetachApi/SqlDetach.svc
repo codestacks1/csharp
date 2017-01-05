@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Xiaowen.Service.SqlDetachApi.SqlDetach" CodeBehind="SqlDetach.svc.cs" %>

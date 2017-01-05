@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using System.Web.Mvc;
 
 namespace Xiaowen.Personal.SqlDetach
 {
@@ -33,7 +29,7 @@ namespace Xiaowen.Personal.SqlDetach
     /// <param name="dataParameter"></param>
     /// <param name="where"></param>
     /// <returns></returns>
-    public delegate StringBuilder XwSqlDetachSimpleHandler(ref XwSqlSimpleSchema sql, ref ArrayList dataParameter, ref WhereClauseSchema[] where);
+    public delegate StringBuilder XwSqlDetachSimpleHandler(ref XwSqlSimpleSchema sql, ref ArrayList dataParameter, params XwWhereClauseSchema[] where);
 
     /// <summary>
     /// author: xiaowen
@@ -42,16 +38,18 @@ namespace Xiaowen.Personal.SqlDetach
     /// <param name="dataParameter"></param>
     /// <param name="where"></param>
     /// <returns></returns>
-    public delegate StringBuilder XwSqlDetachComplexHandler(ref XwSqlComplexSchema sql, ref ArrayList dataParameter, ref WhereClauseSchema[] where);
+    public delegate StringBuilder XwSqlDetachComplexHandler(ref XwSqlComplexSchema sql, ref ArrayList dataParameter, params XwWhereClauseSchema[] where);
 
     /// <summary>
     /// author: xiaowen
     /// </summary>
     public class XwEventArgs : EventArgs
     {
-        public bool IsSuccess { get; set; }
+        private bool isSuccess = true;
+        private bool isError = false;
+        public bool IsSuccess { get { return isSuccess; } set { isSuccess = value; } }
 
-        public bool IsError { get; set; }
+        public bool IsError { get { return isError; } set { isError = value; } }
 
         public string ErrorMsg { get; set; }
 

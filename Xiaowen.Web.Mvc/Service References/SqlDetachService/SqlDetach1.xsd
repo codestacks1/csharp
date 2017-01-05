@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Xiaowen.Personal.SqlDetach" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Xiaowen.Personal.SqlDetach" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:10564/SqlDetach.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="SqlDetachBase">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="SqlDetachBase" nillable="true" type="tns:SqlDetachBase" />
+  <xs:simpleType name="XwDoEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="XwDoMvcActionResult" />
+      <xs:enumeration value="XwDoMvcContentResult" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="XwDoEnum" nillable="true" type="tns:XwDoEnum" />
+  <xs:complexType name="ArrayOfXwWhereClauseSchema">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="XwWhereClauseSchema" type="tns:XwWhereClauseSchema" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfXwWhereClauseSchema" nillable="true" type="tns:ArrayOfXwWhereClauseSchema" />
+  <xs:complexType name="XwWhereClauseSchema">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ColumnKey" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ColumnValue" nillable="true" type="xs:anyType" />
+      <xs:element minOccurs="0" name="IsSingleDate" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsSpecialField" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="SpecialHandler" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="XwWhereClauseSchema" nillable="true" type="tns:XwWhereClauseSchema" />
+</xs:schema>

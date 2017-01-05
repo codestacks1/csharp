@@ -1,14 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace Xiaowen.Personal.SqlDetach
 {
     /// <summary>
     /// author:xiaowen
+    /// 
+    /// 该架构不能用于以WCF架构的体系中，具体原因应该跟DataContract有关
+    /// 主要事，事件在wcf架构下，不能响应
+    /// **待处理
     /// </summary>
     public class SqlDetachBase
     {

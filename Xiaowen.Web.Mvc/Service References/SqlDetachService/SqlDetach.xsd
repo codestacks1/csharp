@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Xiaowen.Personal.SqlDetach.Dbo" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Xiaowen.Personal.SqlDetach.Dbo" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:10564/SqlDetach.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Xiaowen.Personal.SqlDetach" />
+  <xs:complexType name="DboHandler">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Xiaowen.Personal.SqlDetach" base="q1:SqlDetachBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DboHandler" nillable="true" type="tns:DboHandler" />
+</xs:schema>

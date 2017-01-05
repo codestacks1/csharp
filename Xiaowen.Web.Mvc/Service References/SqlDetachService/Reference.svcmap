@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="72a2d65c-12bf-48da-b2cd-ccf42efaa7df" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:10564/SqlDetach.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SqlDetach.disco" MetadataType="Disco" ID="e57743b1-c7bb-47e8-85fb-df82bd96a0a6" SourceId="1" SourceUrl="http://localhost:10564/SqlDetach.svc?disco" />
+    <MetadataFile FileName="SqlDetach1.xsd" MetadataType="Schema" ID="d5ffb347-2060-455e-bc73-856cff86fbb0" SourceId="1" SourceUrl="http://localhost:10564/SqlDetach.svc?xsd=xsd2" />
+    <MetadataFile FileName="SqlDetach3.xsd" MetadataType="Schema" ID="f215b925-0ab3-46a1-8c32-810fac0cd47e" SourceId="1" SourceUrl="http://localhost:10564/SqlDetach.svc?xsd=xsd3" />
+    <MetadataFile FileName="SqlDetach2.xsd" MetadataType="Schema" ID="642776d4-6e33-43c4-9652-e3d13ec85591" SourceId="1" SourceUrl="http://localhost:10564/SqlDetach.svc?xsd=xsd0" />
+    <MetadataFile FileName="SqlDetach.xsd" MetadataType="Schema" ID="8b62f360-5b5a-4488-8b5a-55aea6c1524d" SourceId="1" SourceUrl="http://localhost:10564/SqlDetach.svc?xsd=xsd1" />
+    <MetadataFile FileName="SqlDetach.wsdl" MetadataType="Wsdl" ID="84854f19-70ae-4ebd-88b2-e68ed7f2421d" SourceId="1" SourceUrl="http://localhost:10564/SqlDetach.svc?wsdl" />
+    <MetadataFile FileName="SqlDetach4.xsd" MetadataType="Schema" ID="892d5f4e-2804-4f3a-8071-60554c565365" SourceId="1" SourceUrl="http://localhost:10564/SqlDetach.svc?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

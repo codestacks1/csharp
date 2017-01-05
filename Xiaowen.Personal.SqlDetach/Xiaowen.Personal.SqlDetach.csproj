@@ -36,6 +36,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
       <Private>True</Private>
@@ -68,9 +69,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessCode\Demo.cs" />
+    <Compile Include="Dbo\DboHandler.cs" />
+    <Compile Include="Entity\Author.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlDetachBase.cs" />
-    <Compile Include="WhereClauseSchema.cs" />
+    <Compile Include="SQL\Sql01.cs" />
+    <Compile Include="XwDoEnum.cs" />
+    <Compile Include="XwWhereClauseHandler.cs" />
+    <Compile Include="XwWhereClauseSchema.cs" />
     <Compile Include="XwEventArgs.cs" />
     <Compile Include="XwSqlComplexSchema.cs" />
     <Compile Include="XwSqlSimpleSchema.cs" />

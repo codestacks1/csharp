@@ -76,6 +76,8 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -125,10 +127,18 @@
     <Content Include="img\golang_logo.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Properties\DataSources\Xiaowen.Service.SqlDetachApi.CompositeType.datasource" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <None Include="Service References\SqlDetachService\SqlDetach.disco" />
+    <None Include="Service References\SqlDetachService\configuration91.svcinfo" />
+    <None Include="Service References\SqlDetachService\configuration.svcinfo" />
+    <None Include="Service References\SqlDetachService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -139,10 +149,17 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NetworkController.cs" />
     <Compile Include="Controllers\OfficeController.cs" />
+    <Compile Include="Controllers\SqlDetachController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\SqlDetachService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\BaseController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -162,6 +179,23 @@
     <Content Include="Views\Concurrency\Index.cshtml" />
     <Content Include="Views\Cache\Index.cshtml" />
     <Content Include="Views\Network\Index.cshtml" />
+    <Content Include="Views\SqlDetach\Index.cshtml" />
+    <None Include="Service References\SqlDetachService\SqlDetach.wsdl" />
+    <None Include="Service References\SqlDetachService\SqlDetach.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SqlDetachService\SqlDetach1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SqlDetachService\SqlDetach2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SqlDetachService\SqlDetach3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SqlDetachService\SqlDetach4.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -178,6 +212,20 @@
       <Project>{fb5d64ff-5a90-4c01-bd42-e54210ebd821}</Project>
       <Name>Xiaowen.Office.Excel</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Xiaowen.Personal.SqlDetach\Xiaowen.Personal.SqlDetach.csproj">
+      <Project>{C928CE56-96B3-48EA-9090-2E13D9210A6D}</Project>
+      <Name>Xiaowen.Personal.SqlDetach</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xiaowen.Service.SqlDetachApi\Xiaowen.Service.SqlDetachApi.csproj">
+      <Project>{9F6178AA-D41E-4083-9F00-FABB52ACA723}</Project>
+      <Name>Xiaowen.Service.SqlDetachApi</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\SqlDetachService\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
