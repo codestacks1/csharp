@@ -91,6 +91,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "xiaowen.service.api", "xiao
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xiaowen.Service.SqlDetachApi", "Xiaowen.Service.SqlDetachApi\Xiaowen.Service.SqlDetachApi.csproj", "{9F6178AA-D41E-4083-9F00-FABB52ACA723}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "xiaowen.files", "xiaowen.files", "{BCCE0B31-7F9E-452A-AAF9-A2D5143E60E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xiaowen.Files.Serializable", "Xiaowen.Files.Serializable\Xiaowen.Files.Serializable.csproj", "{0A252E97-ACB2-4484-AE45-61688E0D61F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xiaowen.Web.Silverlight", "Xiaowen.Web.Silverlight\Xiaowen.Web.Silverlight.csproj", "{4BD1A164-E9C3-4617-9536-DB6922F2C9E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xiaowen.Web.SilverlightWeb", "Xiaowen.Web.SilverlightWeb\Xiaowen.Web.SilverlightWeb.csproj", "{DA1D8BDB-B8A1-418C-998A-77093796AD04}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Xiaowen.Resource.Script\Xiaowen.Resource.Script.projitems*{059b202d-0c7e-411a-95b6-d5eac3c211e5}*SharedItemsImports = 13
@@ -192,6 +200,18 @@ Global
 		{9F6178AA-D41E-4083-9F00-FABB52ACA723}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F6178AA-D41E-4083-9F00-FABB52ACA723}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F6178AA-D41E-4083-9F00-FABB52ACA723}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A252E97-ACB2-4484-AE45-61688E0D61F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A252E97-ACB2-4484-AE45-61688E0D61F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A252E97-ACB2-4484-AE45-61688E0D61F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A252E97-ACB2-4484-AE45-61688E0D61F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BD1A164-E9C3-4617-9536-DB6922F2C9E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BD1A164-E9C3-4617-9536-DB6922F2C9E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BD1A164-E9C3-4617-9536-DB6922F2C9E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BD1A164-E9C3-4617-9536-DB6922F2C9E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA1D8BDB-B8A1-418C-998A-77093796AD04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA1D8BDB-B8A1-418C-998A-77093796AD04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA1D8BDB-B8A1-418C-998A-77093796AD04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA1D8BDB-B8A1-418C-998A-77093796AD04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -225,5 +245,8 @@ Global
 		{8223E0FD-8DAA-4D6A-89FD-FA287D065595} = {F4A76307-B4C3-4D54-8FB1-93535B960F5B}
 		{C928CE56-96B3-48EA-9090-2E13D9210A6D} = {8223E0FD-8DAA-4D6A-89FD-FA287D065595}
 		{9F6178AA-D41E-4083-9F00-FABB52ACA723} = {4A0F3436-80AD-486B-93DB-9B06B196C0E2}
+		{0A252E97-ACB2-4484-AE45-61688E0D61F9} = {BCCE0B31-7F9E-452A-AAF9-A2D5143E60E2}
+		{4BD1A164-E9C3-4617-9536-DB6922F2C9E0} = {30E8825C-64D4-4CC5-91A2-85E122726F3A}
+		{DA1D8BDB-B8A1-418C-998A-77093796AD04} = {30E8825C-64D4-4CC5-91A2-85E122726F3A}
 	EndGlobalSection
 EndGlobal

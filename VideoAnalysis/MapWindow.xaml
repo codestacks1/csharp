@@ -4,6 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VideoAnalysis"
+        
+        
         mc:Ignorable="d"
         Title="MapWindow" Height="589" Width="1036.525" WindowStartupLocation="CenterScreen" Icon="/img/logo_01.ico">
     <Grid>
