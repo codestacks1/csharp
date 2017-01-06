@@ -44,6 +44,10 @@
                 <views:QuestionnaireView x:Name="Mvvm" />
             </dx:DXTabItem>
 
+            <dx:DXTabItem Header="Video">
+                <views:VideoView x:Name="VideoDemo" />
+            </dx:DXTabItem>
+
         </dx:DXTabControl>
 
     </Grid>

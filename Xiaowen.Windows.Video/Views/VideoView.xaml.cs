@@ -1,5 +1,4 @@
-﻿using Microsoft.Practices.Prism.Mvvm;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,18 +10,34 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Xiaowen.Windows.Video.Views
 {
     /// <summary>
-    /// Interaction logic for VideoWindow.xaml
+    /// Interaction logic for VideoView.xaml
     /// </summary>
-    public partial class VideoWindow : Window, IView
+    public partial class VideoView : UserControl
     {
-        public VideoWindow()
+        public VideoView()
         {
             InitializeComponent();
+        }
+
+        private void MyMidea_MediaOpened(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MyMidea_MediaEnded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MyMidea.Play();
         }
     }
 }

@@ -8,8 +8,8 @@
         xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
         mc:Ignorable="d"        
         prism:ViewModelLocator.AutoWireViewModel="True"
-        WindowStartupLocation="CenterScreen" AllowsTransparency="True"
-        Title="MainWindow" Height="300" Width="300">
+        WindowStartupLocation="CenterScreen"
+        Title="WeChat" Height="600" Width="900" ResizeMode="NoResize" SizeToContent="Manual" Icon="/Xiaowen.Windows.WeChat;component/xiaowen_wechat_logo.ico">
     <Grid>
 
         <dx:DXTabControl>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Xiaowen.Windows.Video.ViewModels
 {
-    public class VideoWindowViewModel
+    public class VideoViewModel
     {
 
     }

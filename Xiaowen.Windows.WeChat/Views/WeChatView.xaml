@@ -4,13 +4,18 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Xiaowen.Windows.WeChat.Views"
+             xmlns:prism="http://www.codeplex.com/prism"
+             xmlns:viweModels="clr-namespace:Xiaowen.Windows.WeChat.ViewModels"
              mc:Ignorable="d" 
-             d:DesignHeight="500" d:DesignWidth="800">
+             d:DesignHeight="600" d:DesignWidth="900"
+             d:DataContext="{d:DesignInstance viweModels:WeChatViewModel,IsDesignTimeCreatable=True}"
+             prism:ViewModelLocator.AutoWireViewModel="True">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="60"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto" MaxWidth="200"/>
@@ -22,7 +27,7 @@
             <Label Content="This is your name"/>
         </StackPanel>
 
-        <Grid Grid.Row="1">
+        <Grid Grid.Row="1" Grid.RowSpan="3">
             <ListView DataContext="{Binding}"/>
         </Grid>
 
@@ -32,12 +37,22 @@
                 <RowDefinition Height="200" MaxHeight="200"/>
             </Grid.RowDefinitions>
 
-            <RichTextBox Height="300">
+            <RichTextBox Height="200">
             </RichTextBox>
 
             <Border Grid.Row="1" BorderBrush="Blue" BorderThickness="1"/>
-            <TextBox Grid.Row="1" Text="123"/>
+            <TextBox Grid.Row="1" 
+                     Text="{Binding Message.Content,Mode=TwoWay}"/>
 
         </Grid>
+
+        <Button Grid.Row="3" 
+                Grid.Column="2" 
+                Width="80" 
+                Height="27"
+                HorizontalAlignment="Right" 
+                Margin="30,0"
+                Content="Send Msg"
+                Command="{Binding SendCommand}"/>
     </Grid>
 </UserControl>

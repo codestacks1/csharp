@@ -116,7 +116,7 @@
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="ViewModels\MapWindowViewMap.cs" />
     <Compile Include="ViewModels\QuestionnaireViewModel.cs" />
-    <Compile Include="ViewModels\VideoWindowViewModel.cs" />
+    <Compile Include="ViewModels\VideoViewModel.cs" />
     <Compile Include="Views\HomeWindow.xaml.cs">
       <DependentUpon>HomeWindow.xaml</DependentUpon>
     </Compile>
@@ -132,8 +132,8 @@
     <Compile Include="Views\RabbitMqWindow.xaml.cs">
       <DependentUpon>RabbitMqWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\VideoWindow.xaml.cs">
-      <DependentUpon>VideoWindow.xaml</DependentUpon>
+    <Compile Include="Views\VideoView.xaml.cs">
+      <DependentUpon>VideoView.xaml</DependentUpon>
     </Compile>
     <Page Include="Loading.xaml">
       <SubType>Designer</SubType>
@@ -166,7 +166,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\VideoWindow.xaml">
+    <Page Include="Views\VideoView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -213,6 +213,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="logo_01.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Video\demo.mp4" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Esri.ArcGISRuntime.WPF.100.0.0\build\net452\Esri.ArcGISRuntime.WPF.targets" Condition="Exists('..\packages\Esri.ArcGISRuntime.WPF.100.0.0\build\net452\Esri.ArcGISRuntime.WPF.targets')" />

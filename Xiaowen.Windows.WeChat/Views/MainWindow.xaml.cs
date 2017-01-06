@@ -1,4 +1,5 @@
-﻿using Microsoft.Practices.Prism.Mvvm;
+﻿
+using Microsoft.Practices.Prism.Mvvm;
 using System.Windows;
 
 namespace Xiaowen.Windows.WeChat.Views
