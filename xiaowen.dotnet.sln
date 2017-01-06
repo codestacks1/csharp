@@ -99,6 +99,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xiaowen.Web.SilverlightWeb"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xiaowen.Windows.Video", "Xiaowen.Windows.Video\Xiaowen.Windows.Video.csproj", "{DC758B87-9183-4FB9-B31D-006664703746}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xiaowen.Windows.WeChat", "Xiaowen.Windows.WeChat\Xiaowen.Windows.WeChat.csproj", "{02368612-DD51-481D-80DF-D714CCA3CFEF}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Xiaowen.Resource.Script\Xiaowen.Resource.Script.projitems*{059b202d-0c7e-411a-95b6-d5eac3c211e5}*SharedItemsImports = 13
@@ -212,6 +214,10 @@ Global
 		{DC758B87-9183-4FB9-B31D-006664703746}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC758B87-9183-4FB9-B31D-006664703746}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC758B87-9183-4FB9-B31D-006664703746}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02368612-DD51-481D-80DF-D714CCA3CFEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02368612-DD51-481D-80DF-D714CCA3CFEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02368612-DD51-481D-80DF-D714CCA3CFEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02368612-DD51-481D-80DF-D714CCA3CFEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -248,5 +254,6 @@ Global
 		{4BD1A164-E9C3-4617-9536-DB6922F2C9E0} = {30E8825C-64D4-4CC5-91A2-85E122726F3A}
 		{DA1D8BDB-B8A1-418C-998A-77093796AD04} = {30E8825C-64D4-4CC5-91A2-85E122726F3A}
 		{DC758B87-9183-4FB9-B31D-006664703746} = {409B5C38-26A8-4053-8C39-20EB1D93BE49}
+		{02368612-DD51-481D-80DF-D714CCA3CFEF} = {409B5C38-26A8-4053-8C39-20EB1D93BE49}
 	EndGlobalSection
 EndGlobal

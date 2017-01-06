@@ -3,11 +3,11 @@
 namespace Xiaowen.Windows.Video.Views
 {
     /// <summary>
-    /// Interaction logic for MapWindow.xaml
+    /// Interaction logic for RabbitMq.xaml
     /// </summary>
-    public partial class MapWindow : Window
+    public partial class RabbitMqWindow : Window
     {
-        public MapWindow()
+        public RabbitMqWindow()
         {
             InitializeComponent();
         }
