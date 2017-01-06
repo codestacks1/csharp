@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace VideoAnalysis
+namespace Xiaowen.Windows.Video.Views
 {
     /// <summary>
     /// Interaction logic for MapWindow.xaml

@@ -1,0 +1,50 @@
+﻿<Window x:Class="Xiaowen.Windows.Video.Views.HomeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Xiaowen.Windows.Video"
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"         
+        mc:Ignorable="d"
+        xmlns:views="clr-namespace:Xiaowen.Windows.Video.Views"
+        xmlns:prism="http://www.codeplex.com/prism"
+        
+        Title="Home" Height="589" Width="1036.525"
+        WindowStartupLocation="CenterScreen" Icon="/img/logo_01.ico" FontStyle="Oblique">
+    <Grid>
+
+        <dx:DXTabControl>
+            <dx:DXTabItem Header="HomeWindow">
+                <Grid Background="Transparent" DataContext="{Binding}">
+                    <!--数据绑定放在具体内容也，不在此处-->
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button x:Name="ViewMap" Margin="10" Grid.Column="0" Click="ViewMap_Click" Content="OpenTheMapWindow"></Button>
+
+                    </Grid>
+                </Grid>
+            </dx:DXTabItem>
+
+            <dx:DXTabItem Header="MapWindow">
+                <Grid Background="Transparent" DataContext="{Binding}"/>
+            </dx:DXTabItem>
+
+            <dx:DXTabItem Header="MVVM Pattern">
+                <views:QuestionnaireView x:Name="Mvvm" />
+            </dx:DXTabItem>
+
+        </dx:DXTabControl>
+
+    </Grid>
+</Window>

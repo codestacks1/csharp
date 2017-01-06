@@ -1,9 +1,9 @@
-﻿<UserControl x:Class="VideoAnalysis.Loading"
+﻿<UserControl x:Class="Xiaowen.Windows.Video.Loading"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:VideoAnalysis"
+             xmlns:local="clr-namespace:Xiaowen.Windows.Video"
              mc:Ignorable="d" 
              d:DesignHeight="1028.833" d:DesignWidth="589" Width="1028.833" Height="589">
 

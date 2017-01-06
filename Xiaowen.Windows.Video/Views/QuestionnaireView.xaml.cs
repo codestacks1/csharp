@@ -13,16 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace VideoAnalysis
+namespace Xiaowen.Windows.Video.Views
 {
     /// <summary>
-    /// Interaction logic for Loading.xaml
-    /// 程序启动加载
-    /// 
+    /// Interaction logic for Questionnaire.xaml
     /// </summary>
-    public partial class Loading : UserControl
+    public partial class QuestionnaireView : UserControl
     {
-        public Loading()
+        public QuestionnaireView()
         {
             InitializeComponent();
         }

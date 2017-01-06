@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace VideoAnalysis
+namespace Xiaowen.Windows.Video
 {
     /// <summary>
     /// Interaction logic for App.xaml
