@@ -269,7 +269,6 @@
     <Resource Include="img\pausedown.png" />
     <Resource Include="img\playdown.png" />
     <Resource Include="img\stopdown.png" />
-    <Content Include="midea\demo.mp4" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
