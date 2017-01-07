@@ -30,8 +30,23 @@
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
 
-                        <Button x:Name="ViewMap" Margin="10" Grid.Column="0" Click="ViewMap_Click" Content="OpenTheMapWindow"></Button>
+                        <Button x:Name="ViewMap" 
+                                Margin="10" 
+                                Grid.Column="0" 
+                                Click="ViewMap_Click" 
+                                Content="OpenTheMapWindow" />
 
+                        <Button x:Name="PlayMidea" 
+                                Margin="10" 
+                                Grid.Column="1" 
+                                Click="PlayMidea_Click"  
+                                Content="MideaPageView" />
+
+                        <Button x:Name="RabbitMq" 
+                                Margin="10" 
+                                Grid.Column="2" 
+                                Click="RabbitMq_Click" 
+                                Content="RabbitMqTest" />
                     </Grid>
                 </Grid>
             </dx:DXTabItem>
@@ -41,12 +56,19 @@
             </dx:DXTabItem>
 
             <dx:DXTabItem Header="MVVM Pattern">
+                <!--QuestionnaireView UserControl-->
                 <views:QuestionnaireView x:Name="Mvvm" />
             </dx:DXTabItem>
 
             <dx:DXTabItem Header="Video">
+                <!--VideoView UserControl-->
                 <views:VideoView x:Name="VideoDemo" />
             </dx:DXTabItem>
+
+            <!--<dx:DXTabItem Header="MideaPage">
+                --><!--MideaPage Page--><!--
+                <views:MideaPage x:Name="MideaPage" />
+            </dx:DXTabItem>-->
 
         </dx:DXTabControl>
 

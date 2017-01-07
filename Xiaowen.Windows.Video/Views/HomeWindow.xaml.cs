@@ -30,5 +30,16 @@ namespace Xiaowen.Windows.Video.Views
             MapWindow map = new MapWindow();
             map.Show();
         }
+
+        private void PlayMidea_Click(object sender, RoutedEventArgs e)
+        {
+            MideaWindow midea = new MideaWindow();
+            midea.Show();
+        }
+
+        private void RabbitMq_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -1,0 +1,3 @@
+﻿一定要注意路径,
+该播放组件支持wmv mp4 ...
+path for MideaElemnt video player of Source is this relative path format "../../midea.videoformat"

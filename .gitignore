@@ -35,6 +35,8 @@ bld/
 *Test*/
 *console*/
 *Console*/
+*.wmv
+*.mp4
 
 # NUNIT
 *.VisualState.xml
