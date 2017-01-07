@@ -1,0 +1,10 @@
+﻿Git 分布式版本控制系统
+
+1、clone
+2、unstage
+3、commit
+4、pull
+5、push
+6、checkout 用来切换分支，与SVN有很大区别，需注意
+7、merge
+8、branch
