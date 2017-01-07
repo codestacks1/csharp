@@ -1,10 +1,10 @@
 ﻿Git 分布式版本控制系统
 
-1、clone
-2、unstage
-3、commit
-4、pull
-5、push
+1、clone git从服务端获取代码的方式，SVN为checkout
+2、unstage 暂存区
+3、commit 将已修改，并保存到暂存区的修改提交，有就保存此次提交的改变
+4、pull 拉取
+5、push 推送到服务端（远端）
 6、checkout 用来切换分支，与SVN有很大区别，需注意
-7、merge
-8、branch
+7、merge 合并分支
+8、branch 分支
