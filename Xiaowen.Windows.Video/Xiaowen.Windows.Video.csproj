@@ -53,7 +53,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>logo_01.ico</ApplicationIcon>
+    <ApplicationIcon>logo.host.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>F421C5CA045B56F41F61915BD957C70256CEC262</ManifestCertificateThumbprint>
@@ -117,6 +117,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml" />
@@ -133,6 +134,9 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="WpfAnimatedGif">
+      <HintPath>..\packages\WpfAnimationGif\WpfAnimatedGif.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -140,6 +144,24 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Model\Questionnaire.cs" />
+    <Compile Include="Pages\MideaPage.xaml.cs">
+      <DependentUpon>MideaPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Map.xaml.cs">
+      <DependentUpon>Map.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\TabHome.xaml.cs">
+      <DependentUpon>TabHome.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Loading.xaml.cs">
+      <DependentUpon>Loading.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\LoadingGif.xaml.cs">
+      <DependentUpon>LoadingGif.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\TabMideaPlay.xaml.cs">
+      <DependentUpon>TabMideaPlay.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\HomeWindowViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="ViewModels\MapWindowViewMap.cs" />
@@ -154,32 +176,40 @@
     <Compile Include="Views\MapWindow.xaml.cs">
       <DependentUpon>MapWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\MideaPage.xaml.cs">
-      <DependentUpon>MideaPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\MideaWindow.xaml.cs">
-      <DependentUpon>MideaWindow.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\QuestionnaireView.xaml.cs">
       <DependentUpon>QuestionnaireView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\RabbitMqWindow.xaml.cs">
       <DependentUpon>RabbitMqWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\VideoView.xaml.cs">
-      <DependentUpon>VideoView.xaml</DependentUpon>
-    </Compile>
-    <Page Include="Loading.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Loading.xaml.cs">
-      <DependentUpon>Loading.xaml</DependentUpon>
-    </Compile>
+    <Page Include="Pages\MideaPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\Map.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\TabHome.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\Loading.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\LoadingGif.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\TabMideaPlay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\HomeWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -192,23 +222,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\MideaPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\MideaWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Views\QuestionnaireView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\RabbitMqWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\VideoView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -232,6 +250,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="config\Map.config" />
     <None Include="Docs\MicrosoftPrismPattern.docx" />
     <None Include="midea\README.mdown" />
     <None Include="packages.config" />
@@ -246,29 +265,37 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="img\logo_01.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="img\loading_bg01.jpg" />
     <Resource Include="img\loading_run.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Map\" />
+    <Folder Include="style\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="img\play.png" />
-    <Resource Include="logo_01.ico" />
-  </ItemGroup>
-  <ItemGroup>
+    <Resource Include="logo.host.ico" />
+    <Resource Include="img\logo.engineer.ico" />
+    <Resource Include="img\logo.host.ico" />
+    <Resource Include="img\logo.midea.ico" />
+    <Resource Include="img\logo.reader.ico" />
+    <Resource Include="img\launch.gif" />
+    <Resource Include="img\01mediapause.png" />
+    <Resource Include="img\01mediaplay.png" />
+    <Resource Include="img\01mediareplay.png" />
+    <Resource Include="img\01mediastop.png" />
+    <Resource Include="img\02mediaplay.png" />
+    <Resource Include="img\02mediastop.png" />
+    <Resource Include="img\log.writer.ico" />
+    <Resource Include="img\mdeiastop.png" />
+    <Resource Include="img\mediapause.png" />
+    <Resource Include="img\mediaplay.png" />
+    <Resource Include="img\01map.png" />
+    <Resource Include="img\global.png" />
+    <Resource Include="img\map.png" />
+    <Content Include="midea\launch.animation.wmv" />
     <Content Include="midea\Robotica_720.wmv" />
-    <Resource Include="img\pause.png" />
-    <Resource Include="img\replay.png" />
     <Resource Include="img\run.png" />
-    <Resource Include="img\stop.png" />
     <Resource Include="img\back.png" />
-    <Resource Include="img\pausedown.png" />
-    <Resource Include="img\playdown.png" />
-    <Resource Include="img\stopdown.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
@@ -282,6 +309,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <Import Project="..\Xiaowen.Images\Xiaowen.Images.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Esri.ArcGISRuntime.WPF.100.0.0\build\net452\Esri.ArcGISRuntime.WPF.targets" Condition="Exists('..\packages\Esri.ArcGISRuntime.WPF.100.0.0\build\net452\Esri.ArcGISRuntime.WPF.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

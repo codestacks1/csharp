@@ -7,68 +7,44 @@
         xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"         
         mc:Ignorable="d"
         xmlns:views="clr-namespace:Xiaowen.Windows.Video.Views"
+        xmlns:controls="clr-namespace:Xiaowen.Windows.Video.UserControls"
         xmlns:prism="http://www.codeplex.com/prism"
         
         Title="Home" Height="589" Width="1036.525"
-        WindowStartupLocation="CenterScreen" Icon="/img/logo_01.ico" FontStyle="Oblique">
+        WindowStartupLocation="CenterScreen" Icon="/Xiaowen.Windows.Video;component/logo.host.ico" 
+        FontStyle="Oblique">
     <Grid>
 
         <dx:DXTabControl>
-            <dx:DXTabItem Header="HomeWindow">
-                <Grid Background="Transparent" DataContext="{Binding}">
-                    <!--数据绑定放在具体内容也，不在此处-->
-
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="60"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
-                    <Grid Grid.Row="0">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-
-                        <Button x:Name="ViewMap" 
-                                Margin="10" 
-                                Grid.Column="0" 
-                                Click="ViewMap_Click" 
-                                Content="OpenTheMapWindow" />
-
-                        <Button x:Name="PlayMidea" 
-                                Margin="10" 
-                                Grid.Column="1" 
-                                Click="PlayMidea_Click"  
-                                Content="MideaPageView" />
-
-                        <Button x:Name="RabbitMq" 
-                                Margin="10" 
-                                Grid.Column="2" 
-                                Click="RabbitMq_Click" 
-                                Content="RabbitMqTest" />
-                    </Grid>
-                </Grid>
+            <dx:DXTabItem Header="HomeTab" 
+                          Background="Purple" 
+                          BackgroundColor="Black" 
+                          Foreground="White"
+                          Margin="0,0,1,0">
+                <controls:TabHome />
             </dx:DXTabItem>
 
-            <dx:DXTabItem Header="MapWindow">
-                <Grid Background="Transparent" DataContext="{Binding}"/>
+            <dx:DXTabItem Header="MapTab" 
+                          BackgroundColor="Black" 
+                          Foreground="White"
+                          Margin="0,0,1,0">
             </dx:DXTabItem>
 
-            <dx:DXTabItem Header="MVVM Pattern">
+            <dx:DXTabItem Header="MvvmTab" 
+                          BackgroundColor="Black" 
+                          Foreground="White"
+                          Margin="0,0,1,0">
                 <!--QuestionnaireView UserControl-->
                 <views:QuestionnaireView x:Name="Mvvm" />
             </dx:DXTabItem>
 
-            <dx:DXTabItem Header="Video">
+            <dx:DXTabItem Header="MediaTab" 
+                          BackgroundColor="Black" 
+                          Foreground="White"
+                          Margin="0,0,1,0">
                 <!--VideoView UserControl-->
-                <views:VideoView x:Name="VideoDemo" />
+                <controls:TabMideaPlay />
             </dx:DXTabItem>
-
-            <!--<dx:DXTabItem Header="MideaPage">
-                --><!--MideaPage Page--><!--
-                <views:MideaPage x:Name="MideaPage" />
-            </dx:DXTabItem>-->
 
         </dx:DXTabControl>
 

@@ -1,0 +1,12 @@
+﻿Windows Presontation Fundation
+
+xaml文档Page UserControl Window 标签里的属性
+xmlns:local="clr-namespace:Xiaowen.Windows.Video.UserControls"
+加载名称空间引用，如果出现找不到的情况，比如上面的名称空间，可以通过Rebuild项目解决
+
+A > Page Usercontrol Window
+	Page --< Usercontrol
+	Window --< Page --< Usercontrol == eg. CalendarControl
+	Page & UserControl 必须由Window承载    UserControl 必须由Page&Window来承载
+
+B > 

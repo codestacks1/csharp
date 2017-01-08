@@ -11,5 +11,7 @@ namespace Xiaowen.Windows.Video.Views
         {
             InitializeComponent();
         }
+
+
     }
 }

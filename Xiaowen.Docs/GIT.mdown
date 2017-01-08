@@ -8,3 +8,11 @@
 6、checkout 用来切换分支，与SVN有很大区别，需注意
 7、merge 合并分支
 8、branch 分支
+
+
+gitgui操作流程
+1、git clone one branch 
+2、updated online branch or to created new branch
+3、fetach from remote
+4、created local branch from tracking branch
+5、checkout online branch 

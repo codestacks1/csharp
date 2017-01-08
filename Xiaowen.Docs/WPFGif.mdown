@@ -1,0 +1,4 @@
+﻿WPF不支持Gif格式图片加载活动
+
+需要第三方的组件来实现这一功能
+GitHub url: https://github.com/xiaowenteam/WpfAnimatedGif

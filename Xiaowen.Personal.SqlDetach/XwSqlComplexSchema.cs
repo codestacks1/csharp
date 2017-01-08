@@ -15,7 +15,6 @@ namespace Xiaowen.Personal.SqlDetach
         public string SelectShow { get; set; }
 
         public string SelectFrom { get; set; }
-        private StringBuilder where;
 
         public StringBuilder Where { get; set; }
 

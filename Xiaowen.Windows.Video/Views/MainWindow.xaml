@@ -5,17 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:views="clr-namespace:Xiaowen.Windows.Video.Views"
         xmlns:local="clr-namespace:Xiaowen.Windows.Video"
+        xmlns:animation ="clr-namespace:Xiaowen.Windows.Video.UserControls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="589" Width="1036.525" 
+        Title="LanuchAnimation" Height="589" Width="1036.525" 
         WindowStyle="None" WindowStartupLocation="CenterScreen" 
         Background="{x:Null}" Foreground="{x:Null}" 
-        AllowsTransparency="True">
+        AllowsTransparency="True" Icon="/Xiaowen.Windows.Video;component/logo.host.ico">
 
     <Grid>
-        <local:Loading Margin="-33,0,-32,-16" 
-                       Foreground="{x:Null}" 
-                       DataContext="{Binding}" 
-                       Loaded="Loading_Loaded">
-        </local:Loading>
+        <!--<animation:Loading Margin="-33,0,-32,-16" Loaded="launchAnimation_Loaded">
+        </animation:Loading>-->
+
+        <animation:LoadingGif x:Name="launchAnimation" 
+                              Loaded="launchAnimation_Loaded"/>
     </Grid>
 </Window>

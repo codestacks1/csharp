@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Xiaowen.Windows.Video.Views
+namespace Xiaowen.Windows.Video.Pages
 {
     /// <summary>
     /// Interaction logic for MideaPage.xaml

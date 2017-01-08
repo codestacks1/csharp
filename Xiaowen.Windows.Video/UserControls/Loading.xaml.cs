@@ -12,19 +12,34 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Xiaowen.Windows.Video.Views;
 
-namespace Xiaowen.Windows.Video
+namespace Xiaowen.Windows.Video.UserControls
 {
     /// <summary>
     /// Interaction logic for Loading.xaml
-    /// 程序启动加载
     /// 
+    /// 启动动画
     /// </summary>
     public partial class Loading : UserControl
     {
         public Loading()
         {
             InitializeComponent();
+        }
+
+        public async void LanuchAnimation(object obj)
+        {
+            await this.LaodedStartAnimation();
+            ((Window)obj).Close();
+        }
+
+        async Task LaodedStartAnimation()
+        {
+            await Task.Delay(TimeSpan.FromSeconds(1));
+            //MessageBox.Show("Loaded final");
+            HomeWindow home = new HomeWindow();
+            home.Show();
         }
     }
 }
