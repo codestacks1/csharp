@@ -17,33 +17,50 @@ namespace Xiaowen.Windows.Video.UserControls
 
         private void myMideaElement_MediaOpened(object sender, System.Windows.RoutedEventArgs e)
         {
-            timelineSlider.Maximum = myMideaElement.NaturalDuration.TimeSpan.TotalMilliseconds;
+            try
+            {
+                timelineSlider.Maximum = myMideaElement.NaturalDuration.TimeSpan.TotalMilliseconds;
+            }
+            catch (Exception)
+            {
+
+            }
         }
 
         private void myMideaElement_MediaEnded(object sender, System.Windows.RoutedEventArgs e)
         {
             myMideaElement.Stop();
+
+            replayBtn.Visibility = System.Windows.Visibility.Visible;
         }
 
         private void playBtn_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             myMideaElement.Play();
-            this.InitPropertyValues();
-            Image playBtn = (Image)sender;
+
+            this.ChangeMideaBtnImage(sender, "/Xiaowen.Windows.Video;component/img/01mediapause.png");
+
             playBtn.MouseDown -= playBtn_MouseDown;
             playBtn.MouseDown += pauseBtn_MouseDown;
-            
-            var imgSource = new BitmapImage();
-            imgSource.BeginInit();
-            imgSource.UriSource = new Uri("../../midea/Robotica_720.wmv");
-            imgSource.EndInit();
-            playBtn.Source = imgSource;
 
+            this.InitPropertyValues();
+
+        }
+
+        private void replayBtn_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            replayBtn.Visibility = System.Windows.Visibility.Collapsed;
+            myMideaElement.Play();
         }
 
         private void pauseBtn_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             myMideaElement.Pause();
+
+            this.ChangeMideaBtnImage(sender, "/Xiaowen.Windows.Video;component/img/01mediaplay.png");
+
+            playBtn.MouseDown -= pauseBtn_MouseDown;
+            playBtn.MouseDown += playBtn_MouseDown;
         }
 
         private void stopBtn_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
@@ -76,5 +93,17 @@ namespace Xiaowen.Windows.Video.UserControls
             myMideaElement.Volume = (double)volumeSlider.Value;
             myMideaElement.SpeedRatio = (double)speedRatioSlider.Value;
         }
+
+
+        void ChangeMideaBtnImage(object btn, string uri)
+        {
+            var imgSource = new BitmapImage();
+            imgSource.BeginInit();
+            imgSource.UriSource = new Uri(uri, UriKind.Relative);
+            imgSource.EndInit();
+            ((Image)btn).Source = imgSource;
+        }
+
+
     }
 }
