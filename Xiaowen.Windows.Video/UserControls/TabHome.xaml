@@ -22,21 +22,9 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Button x:Name="ViewMap" 
-                                Margin="10" 
-                                Grid.Column="0" 
-                                Click="ViewMap_Click" 
-                                Content="OpenTheMapWindow" />
-
-            <Button x:Name="PlayMidea" 
-                                Margin="10" 
-                                Grid.Column="1" 
-                                Click="PlayMidea_Click"  
-                                Content="MideaPageView" />
-
             <Button x:Name="RabbitMq" 
                                 Margin="10" 
-                                Grid.Column="2" 
+                                Grid.Column="0" 
                                 Click="RabbitMq_Click" 
                                 Content="RabbitMqTest" />
         </Grid>

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Xiaowen.Windows.Video.ViewModels;
 using Xiaowen.Windows.Video.Views;
 
 namespace Xiaowen.Windows.Video.UserControls
@@ -30,11 +31,15 @@ namespace Xiaowen.Windows.Video.UserControls
 
         public async void LanuchAnimation(object obj)
         {
-            await this.InitAsyncData();
+            await this.CloseLanuchAnimation();
             ((Window)obj).Close();
         }
 
-        private async Task InitAsyncData()
+        /// <summary>
+        /// 一步线程
+        /// </summary>
+        /// <returns></returns>
+        private async Task CloseLanuchAnimation()
         {
             await Task.Delay(TimeSpan.FromSeconds(3));
             //等待3秒gif动画播放完，加载主页面

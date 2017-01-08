@@ -13,8 +13,8 @@ namespace Xiaowen.Windows.Video.UserControls
         /// 令牌
         /// bingkey
         /// </summary>
-        private string token = string.Empty;
-
+       private string token = string.Empty;
+        
         public TabMap()
         {
             InitializeComponent();

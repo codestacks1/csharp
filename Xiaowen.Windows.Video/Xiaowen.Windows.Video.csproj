@@ -144,9 +144,6 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Model\Questionnaire.cs" />
-    <Compile Include="Pages\MideaPage.xaml.cs">
-      <DependentUpon>MideaPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="UserControls\TabMap.xaml.cs">
       <DependentUpon>TabMap.xaml</DependentUpon>
     </Compile>
@@ -173,9 +170,6 @@
     <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\MapWindow.xaml.cs">
-      <DependentUpon>MapWindow.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\QuestionnaireView.xaml.cs">
       <DependentUpon>QuestionnaireView.xaml</DependentUpon>
     </Compile>
@@ -186,10 +180,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Pages\MideaPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="UserControls\TabMap.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -215,10 +205,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\MainWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\MapWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -270,6 +256,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Map\" />
+    <Folder Include="Pages\" />
     <Folder Include="style\" />
   </ItemGroup>
   <ItemGroup>

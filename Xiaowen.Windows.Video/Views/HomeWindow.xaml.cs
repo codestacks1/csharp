@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -12,6 +13,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Xiaowen.Windows.Video.UserControls;
+using Xiaowen.Windows.Video.ViewModels;
 
 namespace Xiaowen.Windows.Video.Views
 {
@@ -23,8 +26,20 @@ namespace Xiaowen.Windows.Video.Views
         public HomeWindow()
         {
             InitializeComponent();
+
+            int? i = Task.CurrentId;
+
+            Thread thr = Thread.CurrentThread;
+
+            //thr.Abort();
+
+           // Task.Run(() =>
+           //{
+           //    TabMap mapComponent = new TabMap();
+           //    TabMapViewModel map = new TabMapViewModel();
+           //});
         }
 
-      
+
     }
 }
