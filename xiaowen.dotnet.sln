@@ -107,6 +107,10 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Xiaowen.Images", "Xiaowen.I
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xiaowen.Windows.Maps", "Xiaowen.Windows.Maps\Xiaowen.Windows.Maps.csproj", "{E47B4F80-A935-4498-A903-29ED19B1F9B6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "xiaowen.dotnet", "xiaowen.dotnet", "{9EB12E7A-450B-42F0-8F9B-C4749F285481}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xiaowen.DotNet.Guide", "Xiaowen.DotNet.Guide\Xiaowen.DotNet.Guide.csproj", "{EFEF165F-EA7C-4CCC-9D57-CD1D13343142}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Xiaowen.Resource.Script\Xiaowen.Resource.Script.projitems*{059b202d-0c7e-411a-95b6-d5eac3c211e5}*SharedItemsImports = 13
@@ -231,6 +235,10 @@ Global
 		{E47B4F80-A935-4498-A903-29ED19B1F9B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E47B4F80-A935-4498-A903-29ED19B1F9B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E47B4F80-A935-4498-A903-29ED19B1F9B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFEF165F-EA7C-4CCC-9D57-CD1D13343142}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFEF165F-EA7C-4CCC-9D57-CD1D13343142}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFEF165F-EA7C-4CCC-9D57-CD1D13343142}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFEF165F-EA7C-4CCC-9D57-CD1D13343142}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -271,5 +279,7 @@ Global
 		{9812B34F-241F-44B3-A59D-0E33799D1ED3} = {B46203E9-AF10-4F74-A8B3-A389C9937887}
 		{BB1AEA0A-364C-40EE-999E-D727D65AEA0C} = {B46203E9-AF10-4F74-A8B3-A389C9937887}
 		{E47B4F80-A935-4498-A903-29ED19B1F9B6} = {409B5C38-26A8-4053-8C39-20EB1D93BE49}
+		{9EB12E7A-450B-42F0-8F9B-C4749F285481} = {F4A76307-B4C3-4D54-8FB1-93535B960F5B}
+		{EFEF165F-EA7C-4CCC-9D57-CD1D13343142} = {9EB12E7A-450B-42F0-8F9B-C4749F285481}
 	EndGlobalSection
 EndGlobal
