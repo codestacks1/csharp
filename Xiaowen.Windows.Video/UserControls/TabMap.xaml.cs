@@ -1,25 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Configuration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Xiaowen.Windows.Video.UserControls
 {
     /// <summary>
     /// Interaction logic for Map.xaml
     /// </summary>
-    public partial class Map : UserControl
+    public partial class TabMap : UserControl
     {
         /// <summary>
         /// 令牌
@@ -27,11 +15,11 @@ namespace Xiaowen.Windows.Video.UserControls
         /// </summary>
         private string token = string.Empty;
 
-        public Map()
+        public TabMap()
         {
             InitializeComponent();
 
-            string map = ConfigurationManager.AppSettings["InitUsedMap"];
+            //string map = ConfigurationManager.AppSettings["InitUsedMap"];
         }
 
         /// <summary>

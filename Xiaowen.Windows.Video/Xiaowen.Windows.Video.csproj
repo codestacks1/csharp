@@ -147,8 +147,8 @@
     <Compile Include="Pages\MideaPage.xaml.cs">
       <DependentUpon>MideaPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Map.xaml.cs">
-      <DependentUpon>Map.xaml</DependentUpon>
+    <Compile Include="UserControls\TabMap.xaml.cs">
+      <DependentUpon>TabMap.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\TabHome.xaml.cs">
       <DependentUpon>TabHome.xaml</DependentUpon>
@@ -164,7 +164,7 @@
     </Compile>
     <Compile Include="ViewModels\HomeWindowViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
-    <Compile Include="ViewModels\MapWindowViewMap.cs" />
+    <Compile Include="ViewModels\TabMapViewModel.cs" />
     <Compile Include="ViewModels\QuestionnaireViewModel.cs" />
     <Compile Include="ViewModels\VideoViewModel.cs" />
     <Compile Include="Views\HomeWindow.xaml.cs">
@@ -190,7 +190,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\Map.xaml">
+    <Page Include="UserControls\TabMap.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
