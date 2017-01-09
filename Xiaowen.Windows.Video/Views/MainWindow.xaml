@@ -5,18 +5,55 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:views="clr-namespace:Xiaowen.Windows.Video.Views"
         xmlns:local="clr-namespace:Xiaowen.Windows.Video"
-        xmlns:animation ="clr-namespace:Xiaowen.Windows.Video.UserControls"
+        xmlns:controls ="clr-namespace:Xiaowen.Windows.Video.UserControls"
         mc:Ignorable="d"
-        Title="LanuchAnimation" Height="589" Width="1036.525" 
-        WindowStyle="None" WindowStartupLocation="CenterScreen" 
-        Background="{x:Null}" Foreground="{x:Null}" 
-        AllowsTransparency="True" Icon="/Xiaowen.Windows.Video;component/logo.host.ico">
+        Title="Main" Height="589" Width="1036.525" 
+        xmlns:prism="http://www.codeplex.com/prism"
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"    
+        
+        WindowStartupLocation="CenterScreen"         
+        Icon="/Xiaowen.Windows.Video;component/logo.host.ico" 
+        FontStyle="Italic" BorderBrush="Purple">
 
     <Grid>
-        <!--<animation:Loading Margin="-33,0,-32,-16" Loaded="launchAnimation_Loaded">
-        </animation:Loading>-->
+        <dx:DXTabControl>
+            <dx:DXTabControl.Resources>
+                <Style TargetType="dx:DXTabItem">
+                    <Setter Property="Height" Value="40"/>
+                    <Setter Property="FontSize" Value="16px"/>
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="Background" Value="Purple"/>
+                    <Setter Property="Margin" Value="0,0,1,0"/>
+                </Style>
+            </dx:DXTabControl.Resources>
 
-        <animation:LoadingGif x:Name="launchAnimation" 
-                              Loaded="launchAnimation_Loaded"/>
+            <dx:DXTabItem Header="Menu" 
+                          BackgroundColor="Black"
+                          FontStretch="Expanded">
+            </dx:DXTabItem>
+
+            <dx:DXTabItem Header="HomeTab" 
+                          BackgroundColor="Black">
+                <controls:TabHome />
+            </dx:DXTabItem>
+
+            <dx:DXTabItem Header="MapTab" 
+                          BackgroundColor="Black">
+                <controls:TabMap />
+            </dx:DXTabItem>
+
+            <dx:DXTabItem Header="MvvmTab" 
+                          BackgroundColor="Black">
+                <!--QuestionnaireView UserControl-->
+                <views:QuestionnaireView x:Name="Mvvm" />
+            </dx:DXTabItem>
+
+            <dx:DXTabItem Header="MediaTab" 
+                          BackgroundColor="Black">
+                <!--VideoView UserControl-->
+                <controls:TabMideaPlay />
+            </dx:DXTabItem>
+
+        </dx:DXTabControl>
     </Grid>
 </Window>

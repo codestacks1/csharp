@@ -1,0 +1,22 @@
+﻿<Window x:Class="Xiaowen.Windows.Video.Views.LoadingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Xiaowen.Windows.Video.Views"
+        mc:Ignorable="d"
+        Title="LanuchAnimation" Height="589" Width="1036.525" 
+        xmlns:animation ="clr-namespace:Xiaowen.Windows.Video.UserControls"
+        WindowStyle="None" 
+        WindowStartupLocation="CenterScreen" 
+        Icon="/Xiaowen.Windows.Video;component/logo.host.ico"
+        AllowsTransparency="True"
+        Background="{x:Null}">
+    <Grid>
+        <!--<animation:Loading Margin="-33,0,-32,-16" Loaded="launchAnimation_Loaded">
+        </animation:Loading>-->
+
+        <animation:LoadingGif x:Name="launchAnimation" 
+                              Loaded="launchAnimation_Loaded"/>
+    </Grid>
+</Window>

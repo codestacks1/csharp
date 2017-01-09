@@ -7,6 +7,13 @@
              mc:Ignorable="d" 
              d:DesignHeight="500" d:DesignWidth="800">
 
+    <UserControl.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+    </UserControl.Resources>
+
+
     <Grid Background="Transparent" DataContext="{Binding}">
         <!--数据绑定放在具体内容也，不在此处-->
 
@@ -23,10 +30,14 @@
             </Grid.ColumnDefinitions>
 
             <Button x:Name="RabbitMq" 
-                                Margin="10" 
                                 Grid.Column="0" 
                                 Click="RabbitMq_Click" 
                                 Content="RabbitMqTest" />
+
+            <Button x:Name="DxDemo"
+                    Grid.Column="1"  
+                    Click="DxDemo_Click"
+                    Content="DxMemo"/>
         </Grid>
     </Grid>
 </UserControl>

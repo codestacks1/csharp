@@ -11,10 +11,5 @@ namespace Xiaowen.Windows.Video.Views
         {
             InitializeComponent();
         }
-
-        private void launchAnimation_Loaded(object sender, RoutedEventArgs e)
-        {
-            launchAnimation.LanuchAnimation(this);
-        }
     }
 }

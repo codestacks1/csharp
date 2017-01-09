@@ -29,7 +29,7 @@ namespace Xiaowen.Windows.Video.UserControls
             image = new BitmapImage(new Uri("/Xiaowen.Windows.Video;component/img/launch.gif", UriKind.Relative));
         }
 
-        public async void LanuchAnimation(object obj)
+        public async Task LanuchAnimation(object obj)
         {
             await this.CloseLanuchAnimation();
             ((Window)obj).Close();
@@ -43,8 +43,8 @@ namespace Xiaowen.Windows.Video.UserControls
         {
             await Task.Delay(TimeSpan.FromSeconds(3));
             //等待3秒gif动画播放完，加载主页面
-            HomeWindow home = new HomeWindow();
-            home.Show();
+            MainWindow main = new MainWindow();
+            main.Show();
         }
     }
 }

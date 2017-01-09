@@ -38,8 +38,8 @@ namespace Xiaowen.Windows.Video.UserControls
         {
             await Task.Delay(TimeSpan.FromSeconds(1));
             //MessageBox.Show("Loaded final");
-            HomeWindow home = new HomeWindow();
-            home.Show();
+            MainWindow main = new MainWindow();
+            main.Show();
         }
     }
 }
