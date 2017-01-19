@@ -61,25 +61,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ESRI.ArcGIS.Client">
-      <HintPath>..\packages\Esri.ArcGIS.Client.lib\ESRI.ArcGIS.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="ESRI.ArcGIS.Client.Behaviors">
-      <HintPath>..\packages\Esri.ArcGIS.Client.lib\ESRI.ArcGIS.Client.Behaviors.dll</HintPath>
+      <HintPath>..\packages\ArcGISSilverlight-Core.3.3.0.33\lib\sl50\ESRI.ArcGIS.Client.dll</HintPath>
     </Reference>
     <Reference Include="ESRI.ArcGIS.Client.Bing">
-      <HintPath>..\packages\Esri.ArcGIS.Client.lib\ESRI.ArcGIS.Client.Bing.dll</HintPath>
-    </Reference>
-    <Reference Include="ESRI.ArcGIS.Client.Portal">
-      <HintPath>..\packages\Esri.ArcGIS.Client.lib\ESRI.ArcGIS.Client.Portal.dll</HintPath>
-    </Reference>
-    <Reference Include="ESRI.ArcGIS.Client.Printing">
-      <HintPath>..\packages\Esri.ArcGIS.Client.lib\ESRI.ArcGIS.Client.Printing.dll</HintPath>
+      <HintPath>..\packages\ArcGISSilverlight-Bing.3.3.0.33\lib\sl50\ESRI.ArcGIS.Client.Bing.dll</HintPath>
     </Reference>
     <Reference Include="ESRI.ArcGIS.Client.Toolkit">
-      <HintPath>..\packages\Esri.ArcGIS.Client.lib\ESRI.ArcGIS.Client.Toolkit.dll</HintPath>
-    </Reference>
-    <Reference Include="ESRI.ArcGIS.Client.Toolkit.DataSources">
-      <HintPath>..\packages\Esri.ArcGIS.Client.lib\ESRI.ArcGIS.Client.Toolkit.DataSources.dll</HintPath>
+      <HintPath>..\packages\ArcGISSilverlight-Toolkit.3.3.0.33\lib\sl50\ESRI.ArcGIS.Client.Toolkit.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="System.Json, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />

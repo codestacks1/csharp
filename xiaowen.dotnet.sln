@@ -50,8 +50,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "xiaowen.resource", "xiaowen
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Xiaowen.Resource.Script", "Xiaowen.Resource.Script\Xiaowen.Resource.Script.shproj", "{059B202D-0C7E-411A-95B6-D5EAC3C211E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAndLoadTestProject1", "WebAndLoadTestProject1\WebAndLoadTestProject1.csproj", "{9E54E233-7EBC-47C1-9B9A-76EF80E5A412}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CC3FB500-B638-4507-8E94-447E560C3B56}"
 	ProjectSection(SolutionItems) = preProject
 		Local.testsettings = Local.testsettings
@@ -60,8 +58,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xiaowen.Memory.Radis", "Xiaowen.Memory.Radis\Xiaowen.Memory.Radis.csproj", "{1A2F8762-5647-4BA8-AF1E-F127D51FBA3F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "xiaowen.console", "xiaowen.console", "{3801EC97-AF64-4B47-9583-D6A84C508F9C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xiaowen.console.office", "xiaowen.console.office\xiaowen.console.office.csproj", "{4CB90EE3-CEB2-4914-97A5-0DC66E3FC3C5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "xiaowen.windows.lib", "xiaowen.windows.lib", "{CF5C4B50-5B3E-40BB-87C9-EAC7ECDD03D4}"
 EndProject
@@ -111,12 +107,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "xiaowen.dotnet", "xiaowen.d
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xiaowen.DotNet.Guide", "Xiaowen.DotNet.Guide\Xiaowen.DotNet.Guide.csproj", "{EFEF165F-EA7C-4CCC-9D57-CD1D13343142}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "xiaowen.external", "xiaowen.external", "{CF7FBF49-76D3-43D2-B381-7497975BFD0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xiaowen.Sensing.OfficialWeb", "Xiaowen.Sensing.OfficialWeb\Xiaowen.Sensing.OfficialWeb.csproj", "{DEB21370-9849-4F45-859C-CDAB351C6DE6}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "xiaowen.packages", "xiaowen.packages\xiaowen.packages.shproj", "{2C418AE4-997B-477A-8F66-EB84529711EA}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Xiaowen.Resource.Script\Xiaowen.Resource.Script.projitems*{059b202d-0c7e-411a-95b6-d5eac3c211e5}*SharedItemsImports = 13
+		xiaowen.packages\xiaowen.packages.projitems*{2c418ae4-997b-477a-8f66-eb84529711ea}*SharedItemsImports = 13
 		Xiaowen.Docs\Xiaowen.Docs.projitems*{9812b34f-241f-44b3-a59d-0e33799d1ed3}*SharedItemsImports = 13
 		Xiaowen.Images\Xiaowen.Images.projitems*{bb1aea0a-364c-40ee-999e-d727d65aea0c}*SharedItemsImports = 13
-		Xiaowen.Images\Xiaowen.Images.projitems*{dc758b87-9183-4fb9-b31d-006664703746}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -163,18 +165,10 @@ Global
 		{944C0DB6-58C5-4B00-8E8A-51A2AE960ED3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{944C0DB6-58C5-4B00-8E8A-51A2AE960ED3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{944C0DB6-58C5-4B00-8E8A-51A2AE960ED3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9E54E233-7EBC-47C1-9B9A-76EF80E5A412}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9E54E233-7EBC-47C1-9B9A-76EF80E5A412}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9E54E233-7EBC-47C1-9B9A-76EF80E5A412}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9E54E233-7EBC-47C1-9B9A-76EF80E5A412}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1A2F8762-5647-4BA8-AF1E-F127D51FBA3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1A2F8762-5647-4BA8-AF1E-F127D51FBA3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A2F8762-5647-4BA8-AF1E-F127D51FBA3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A2F8762-5647-4BA8-AF1E-F127D51FBA3F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4CB90EE3-CEB2-4914-97A5-0DC66E3FC3C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4CB90EE3-CEB2-4914-97A5-0DC66E3FC3C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4CB90EE3-CEB2-4914-97A5-0DC66E3FC3C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4CB90EE3-CEB2-4914-97A5-0DC66E3FC3C5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A1C40A57-3F95-4311-BA57-9A56007883E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A1C40A57-3F95-4311-BA57-9A56007883E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1C40A57-3F95-4311-BA57-9A56007883E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -239,6 +233,10 @@ Global
 		{EFEF165F-EA7C-4CCC-9D57-CD1D13343142}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFEF165F-EA7C-4CCC-9D57-CD1D13343142}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFEF165F-EA7C-4CCC-9D57-CD1D13343142}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEB21370-9849-4F45-859C-CDAB351C6DE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEB21370-9849-4F45-859C-CDAB351C6DE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEB21370-9849-4F45-859C-CDAB351C6DE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEB21370-9849-4F45-859C-CDAB351C6DE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -257,10 +255,8 @@ Global
 		{C116A280-5D7C-4C5B-A6DF-9CA002999155} = {EAF6CC39-0B61-4C43-A707-DC306AC067CB}
 		{944C0DB6-58C5-4B00-8E8A-51A2AE960ED3} = {30E8825C-64D4-4CC5-91A2-85E122726F3A}
 		{059B202D-0C7E-411A-95B6-D5EAC3C211E5} = {B46203E9-AF10-4F74-A8B3-A389C9937887}
-		{9E54E233-7EBC-47C1-9B9A-76EF80E5A412} = {8D80DAD9-08E4-4BDF-B0F6-85B7287690CC}
 		{CC3FB500-B638-4507-8E94-447E560C3B56} = {8D80DAD9-08E4-4BDF-B0F6-85B7287690CC}
 		{1A2F8762-5647-4BA8-AF1E-F127D51FBA3F} = {53F659EB-A28C-42D5-AA34-94AE0FD8C566}
-		{4CB90EE3-CEB2-4914-97A5-0DC66E3FC3C5} = {3801EC97-AF64-4B47-9583-D6A84C508F9C}
 		{A1C40A57-3F95-4311-BA57-9A56007883E6} = {CF5C4B50-5B3E-40BB-87C9-EAC7ECDD03D4}
 		{35E03385-2470-46B4-9C64-EEF9560CE2F8} = {CF5C4B50-5B3E-40BB-87C9-EAC7ECDD03D4}
 		{22C4168D-7621-4DAB-8ED5-ED245FA4A4CA} = {0F89AC8F-01A7-4590-A6E7-87796B09EBA1}
@@ -281,5 +277,7 @@ Global
 		{E47B4F80-A935-4498-A903-29ED19B1F9B6} = {409B5C38-26A8-4053-8C39-20EB1D93BE49}
 		{9EB12E7A-450B-42F0-8F9B-C4749F285481} = {F4A76307-B4C3-4D54-8FB1-93535B960F5B}
 		{EFEF165F-EA7C-4CCC-9D57-CD1D13343142} = {9EB12E7A-450B-42F0-8F9B-C4749F285481}
+		{DEB21370-9849-4F45-859C-CDAB351C6DE6} = {30E8825C-64D4-4CC5-91A2-85E122726F3A}
+		{2C418AE4-997B-477A-8F66-EB84529711EA} = {B46203E9-AF10-4F74-A8B3-A389C9937887}
 	EndGlobalSection
 EndGlobal
