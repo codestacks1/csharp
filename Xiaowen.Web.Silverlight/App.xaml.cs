@@ -16,26 +16,26 @@ namespace Xiaowen.Web.Silverlight
     {
         public App()
         {
-            this.Startup += this.Application_Startup;
-            this.UnhandledException += this.Application_UnhandledException;
+            //this.Startup += this.Application_Startup;
+            //this.UnhandledException += this.Application_UnhandledException;
 
-            this.Exit += App_Exit;
+            //this.Exit += App_Exit;
 
-            InitializeComponent();
+            //InitializeComponent();
         }
 
-        private void App_Exit(object sender, EventArgs e)
-        {
-            //程序退出，清空全局坐标字典变量
-            Bing.BingMap.Coordinate = new Dictionary<int, ESRI.ArcGIS.Client.Geometry.MapPoint>();
-        }
+        //private void App_Exit(object sender, EventArgs e)
+        //{
+        //    //程序退出，清空全局坐标字典变量
+        //    Bing.BingMap.Coordinate = new Dictionary<int, ESRI.ArcGIS.Client.Geometry.MapPoint>();
+        //}
 
-        private void Application_Startup(object sender, StartupEventArgs e)
-        {
-            Bing.BingMap.BingToken = e.InitParams["BingKey"];
+        //private void Application_Startup(object sender, StartupEventArgs e)
+        //{
+        //    Bing.BingMap.BingToken = e.InitParams["BingKey"];
 
-            this.RootVisual = new MainPage();
-        }
+        //    this.RootVisual = new MainPage();
+        //}
 
         private void Application_UnhandledException(object sender, ApplicationUnhandledExceptionEventArgs e)
         {

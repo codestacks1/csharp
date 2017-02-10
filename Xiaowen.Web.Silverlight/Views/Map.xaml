@@ -5,7 +5,8 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
     mc:Ignorable="d"
-    d:DesignHeight="500" d:DesignWidth="800" Margin="0"  xmlns:esri="http://schemas.esri.com/arcgis/client/2009">
+    d:DesignHeight="500" d:DesignWidth="800" Margin="0"  
+                 xmlns:esri="http://schemas.esri.com/arcgis/client/2009">
 
     <Grid x:Name="LayoutRoot" Background="White">
         <Grid.Resources>
