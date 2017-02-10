@@ -10,6 +10,9 @@ namespace Xiaowen.Microsoft.MEF
     {
         static void Main(string[] args)
         {
+            MyClass myClass = new MyClass();
+            myClass.MyAddin = new MyLogger();
+            IMyAddin imyAddin = myClass.MyAddin;
         }
     }
 }

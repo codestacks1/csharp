@@ -11,5 +11,17 @@ namespace Xiaowen.Microsoft.MEF
     {
         [Import]
         public IMyAddin MyAddin { get; set; }
+
+        [Export("MajorRevision")]
+        public int MajorRevision { get; set; }
+
+
+
+    }
+
+
+    public class MyExportClass
+    {
+
     }
 }

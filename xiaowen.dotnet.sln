@@ -117,6 +117,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "xiaoen.schema", "xiaoen.sch
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xiaowen.Microsoft.MEF", "Xiaowen.Microsoft.MEF\Xiaowen.Microsoft.MEF.csproj", "{7E173A0E-819F-4038-9470-4A0179266A7A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xiaowen.Microsoft.MefLab", "Xiaowen.Microsoft.MefLab\Xiaowen.Microsoft.MefLab.csproj", "{31283B86-B81D-4457-BD3A-B3C2845DA94F}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Xiaowen.Resource.Script\Xiaowen.Resource.Script.projitems*{059b202d-0c7e-411a-95b6-d5eac3c211e5}*SharedItemsImports = 13
@@ -245,6 +247,10 @@ Global
 		{7E173A0E-819F-4038-9470-4A0179266A7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E173A0E-819F-4038-9470-4A0179266A7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E173A0E-819F-4038-9470-4A0179266A7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31283B86-B81D-4457-BD3A-B3C2845DA94F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31283B86-B81D-4457-BD3A-B3C2845DA94F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31283B86-B81D-4457-BD3A-B3C2845DA94F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31283B86-B81D-4457-BD3A-B3C2845DA94F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -288,5 +294,6 @@ Global
 		{DEB21370-9849-4F45-859C-CDAB351C6DE6} = {30E8825C-64D4-4CC5-91A2-85E122726F3A}
 		{2C418AE4-997B-477A-8F66-EB84529711EA} = {B46203E9-AF10-4F74-A8B3-A389C9937887}
 		{7E173A0E-819F-4038-9470-4A0179266A7A} = {3E45037F-E4C0-4093-90B1-79DFA9F1F870}
+		{31283B86-B81D-4457-BD3A-B3C2845DA94F} = {3E45037F-E4C0-4093-90B1-79DFA9F1F870}
 	EndGlobalSection
 EndGlobal
